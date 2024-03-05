@@ -147,3 +147,92 @@ while(index < names.length) {
 do {
     console.log("hello");
 } while(true);
+
+// Break and Continue
+for (var i = 0; i <= 10; i++) {
+    if (i < 5) {
+        continue;
+    }
+    console.log(i);
+}
+
+// Increment and Decrement Operators
+var number = 0;
+// Postfix
+console.log("postfix")
+console.log(number++)
+console.log(number)
+console.log(number--)
+console.log(number)
+// Prefix
+console.log("prefix")
+var numberTwo = 0;
+console.log(++numberTwo);
+console.log(--numberTwo);
+
+console.log("for loop")
+for (var i = 0; i <= 10; i++) {
+    console.log(i);
+}
+
+// Comparison Operators
+// < <= > >= == !=
+// boolean is either true or false
+console.log(10 == 10)
+console.log(10 != 10)
+console.log(10 < 10)
+console.log(10 <= 10)
+console.log(10 > 10)
+console.log(10 >= 10)
+
+console.log("A" == "B")
+console.log("A" != "B")
+
+// Logical Operators
+// && ||
+console.log(10 == 10 && "A" == "A")
+console.log(10 == 10 || "A" == "B")
+
+// If statements
+// var condition = 1 < 0;
+
+// if (condition) {
+//     console.log("Runs....");
+// } else {
+//     console.log("Else condition ran..");
+// }
+
+var gender = 'FEMALE';
+
+if (gender == 'M') {
+    console.log('Male');
+} else if (gender == 'F' || gender == 'FEMALE') {
+    console.log('Female');
+} else {
+    console.log('Unkown');
+}
+
+// Ternary If Statement
+var number = 101;
+var result = number % 2 == 0 ? 'Even' : 'Odd';
+console.log(result); 
+
+// if (number % 2 == 0) {
+//     console.log('even');
+// } else {
+//     console.log('odd');
+// }
+
+// Switch
+var gender = 'Hello';
+
+switch(gender) {
+    case "M":
+        console.log('Male');
+        break;
+    case "F":
+        console.log('Female');
+        break;
+    default:
+        console.log('Unknown');
+}
