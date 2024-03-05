@@ -236,3 +236,8 @@ switch(gender) {
     default:
         console.log('Unknown');
 }
+
+//Const - it's the way we should use our variables, because it do not allow duplication
+
+const namee = "Pililiu";
+console.log(namee);
