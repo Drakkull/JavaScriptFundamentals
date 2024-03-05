@@ -74,3 +74,76 @@ console.log(division);
 console.log(multiplication);
 console.log(resto);
 console.log(exponentation);
+
+// Functions
+function addNumbers(number1, number2) {
+    var addition = number1 + number2;
+    return addition;
+}
+
+var result1 = addNumbers(10, 10);
+var result2 = addNumbers(7, 3);
+
+console.log(result1);
+console.log(result2);
+
+//Another Function
+var person = {
+    name: "Jamila"
+}
+console.log(Object.values(person));
+console.log(Object.keys(person));
+
+console.log("Jamila".toUpperCase());
+console.log("Jamila".toLocaleLowerCase());
+console.log("Jamila".indexOf("i"));
+
+// Loops
+var names = [
+    "Alex",
+    "Jamila", 
+    "Joe", 
+    "Aisha",
+    "Bob"
+];
+
+console.log("fori");
+
+for (var i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
+
+console.log();
+console.log("for of");
+
+for (const name of names) {
+    console.log(name);
+}
+
+console.log();
+console.log("forEach");
+
+names.forEach(function(name) {
+    console.log(name)
+});
+
+// While Loops
+var names = [
+    "Alex",
+    "Jamila",
+    "Joe",
+    "Aisha",
+    "Bob"
+];
+
+var index = 0;
+
+while(index < names.length) {
+    console.log(names[index]);
+    index = index + 1;
+}
+
+// Do While Loops
+do {
+    console.log("hello");
+} while(true);
